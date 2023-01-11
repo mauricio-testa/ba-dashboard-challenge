@@ -1,0 +1,46 @@
+@import 'https://fonts.googleapis.com/css?family=Muli:400,500,600,700,800,900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Muli;
+}
+
+.button {
+  @apply px-7 text-white bg-blue-500 rounded font-semibold;
+}
+.link {
+  @apply text-blue-500 text-sm font-bold cursor-pointer;
+}
+.input {
+  @apply rounded border border-gray-300 p-3 mb-4 bg-gray-100;
+}
+
+h2 {
+  @apply text-lg text-primary font-bold;
+  font-size: 24px;
+}
+
+html, body, #app {
+  height: 100%;
+  background-color: #e9edf2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+}
