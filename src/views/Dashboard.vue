@@ -60,10 +60,10 @@
     </div>
   </header>
 
-  <div class="container mx-auto p-2">
+  <div class="container mx-auto p-3">
     <div class="grid-cols-12 lg:grid gap-4">
       <section class="col-start-1 col-end-10">
-        <header class="my-3 flex items-center justify-between h-12">
+        <header class="mb-3 md:mt-3 flex items-center justify-between h-12">
           <h2>My apps</h2>
           <input
             type="text"
