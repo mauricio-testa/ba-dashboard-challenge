@@ -1,5 +1,5 @@
 <template>
-  <header class="shadow-lg flex bg-white p-4">
+  <header class="shadow flex bg-white p-4">
     <div class="container mx-auto flex justify-between">
       <img
         width="100"
@@ -9,7 +9,7 @@
         <ul class="h-full flex gap-6 items-center">
           <li
             v-for="i in ['Affiliates', 'Help', 'Add-ons']"
-            class="text-sm font-semibold text-gray-800"
+            class="text-sm font-semibold text-gray-800 md:block hidden"
           >
             {{ i }}
           </li>
@@ -28,7 +28,8 @@
                 rounded
                 top-10
                 right-0
-                w-96
+                md:w-96
+                w-72
                 overflow-y-auto
                 p-4
                 z-10
@@ -46,10 +47,10 @@
                   my-2
                 "
               />
-              <ul class="gap-2 grid gap-4 grid-cols-3 grid-rows-3">
+              <ul class="gap-2 grid gap-4 grid-cols-2 md:grid-cols-3">
                 <apps-menu
                   :img="70"
-                  item-classes="basis-1/3 shrink-0 items-center flex flex-col bg-white p-1 shadow rounded"
+                  item-classes="items-center flex flex-col bg-white p-1 shadow rounded"
                 />
               </ul>
             </div>
@@ -60,7 +61,7 @@
   </header>
 
   <div class="container mx-auto p-2">
-    <div class="grid-cols-12 grid gap-4">
+    <div class="grid-cols-12 lg:grid gap-4">
       <section class="col-start-1 col-end-10">
         <header class="my-3 flex items-center justify-between h-12">
           <h2>My apps</h2>
@@ -82,8 +83,8 @@
         <header class="mt-8 h-12">
           <h2>Suggested projects</h2>
         </header>
-        <ul class="flex gap-4">
-          <li v-for="p in projects" class="flex items-center basis-1/4">
+        <ul class="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+          <li v-for="p in projects" class="flex items-center">
             <img
               width="90"
               src="https://office.builderall.com/internacional/public/office5/img/tools/hover/builderall_builder.svg"
@@ -98,7 +99,7 @@
         <header class="mt-8 h-12">
           <h2>Learn Builderall</h2>
         </header>
-        <ul class="flex gap-4">
+        <ul class="grid gap-4 grid-cols-1 sm:grid-cols-3 xl:grid-cols-5">
           <li class="flex items-center flex-col bg-white rounded shadow" v-for="p in ['Email marketing', 'Quick start training', 'Facebook ads course', 'Builderall University Live', 'Another course']" >
             <img
               class="w-full rounded-t"

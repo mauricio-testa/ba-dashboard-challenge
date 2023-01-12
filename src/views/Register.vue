@@ -1,19 +1,19 @@
 <template>
   <div class="h-full register-bg px-6">
-    <div class="flex mx-auto items-center h-full gap-8" style="max-width: 1100px">
-      <div class="grow shrink basis-1/2">
-      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_FbG1vd.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
-        <h1 class="text-4xl font-bold">
+    <div class="flex mx-auto items-center h-full gap-8 flex-col md:flex-row py-4" style="max-width: 1100px">
+      <div class="md:basis-1/2 text-center md:text-left">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_FbG1vd.json"  background="transparent"  speed="1" class="w-16 h-16 md:w-24 md:h-24 m-auto md:m-0 "  loop autoplay></lottie-player>
+        <h1 class="text-2xl md:text-4xl font-bold">
           The octopus welcomes you
         </h1>
-        <p class="text-xl mt-3">One platform, everything you need to work with digital marketing</p>
+        <p class="md:text-xl mt-3">One platform, everything you need to work with digital marketing</p>
       </div>
-      <div class="bg-white p-4 rounded shadow grow shrink basis-">
+      <div class="bg-white p-4 rounded shadow md:grow shrink w-full md:w-auto">
       <form class="p-4">
         <header class="flex flex-col items-center">
         <img width="130" class="mb-4" src="https://office.builderall.com/internacional/public/franchise/logo/logo-30877-7830.png" alt="">
 
-        <h1 class="text-2xl font-bold">Create your account</h1>
+        <h1 class="text-xl md:text-2xl font-bold">Create your account</h1>
         </header>
 
         <button class="flex items-center py-3 px-4 border-2 border-primary rounded w-full gap-3 mt-4">
